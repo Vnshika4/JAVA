@@ -1,7 +1,8 @@
-/*Given a 2D matrix representing a map where '1's represent land and '0's represent water, write a program to count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.*/
-package lp2;
+// Given a 2D matrix representing a map where '1's represent land and '0's represent water, write a program to count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.
 public class exp4e{
     public static void main(String[] args) {
+        System.out.println("Name: Vanshika");
+        System.out.println("Roll No: 2210997266");
         int[][] map = {
             {1, 1, 0, 0, 0},
             {0, 1, 0, 0, 1},
