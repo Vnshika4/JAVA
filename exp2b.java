@@ -1,8 +1,8 @@
-/*Implement a password generator that takes command-line arguments to specify the length
-of the password and which character sets to include (e.g., uppercase letters, lowercase
-letters, numbers, special characters).*/
-package lp2;
+// Implement a password generator that takes command-line arguments to specify the length
+// of the password and which character sets to include (e.g., uppercase letters, lowercase
+// letters, numbers, special characters).
 import java.util.Random;
+
 public class exp2b {
 
     private static final char[] UPPERCASE_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
@@ -11,11 +11,12 @@ public class exp2b {
     private static final char[] SPECIAL_CHARS = "!@#$%^&*()-_=+[{]}\\|;:'\",<.>/?`~".toCharArray();
 
     public static void main(String[] args) {
+        System.out.println("Name: Vanshika");
+        System.out.println("Roll No: 2210997266");
         if (args.length < 1) {
             System.out.println("Usage: java PasswordGenerator <length> [uppercase lowercase numbers special_chars]");
             return;
         }
-
         int length = Integer.parseInt(args[0]);
         String characterSets = args.length > 1 ? args[1] : "";
 
@@ -36,11 +37,10 @@ public class exp2b {
         }
 
         for (int i = password.length(); i < length; i++) {
-            char[] chars = characterSets.contains("uppercase") ? UPPERCASE_LETTERS :
-                           characterSets.contains("lowercase") ? LOWERCASE_LETTERS :
-                           characterSets.contains("numbers") ? NUMBERS :
-                           characterSets.contains("special_chars") ? SPECIAL_CHARS :
-                           UPPERCASE_LETTERS;
+            char[] chars = characterSets.contains("uppercase") ? UPPERCASE_LETTERS
+                    : characterSets.contains("lowercase") ? LOWERCASE_LETTERS
+                            : characterSets.contains("numbers") ? NUMBERS
+                                    : characterSets.contains("special_chars") ? SPECIAL_CHARS : UPPERCASE_LETTERS;
             password.append(chars[random.nextInt(chars.length)]);
         }
 
