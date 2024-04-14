@@ -1,5 +1,4 @@
-/*Write a program that rotates a given N x N matrix 90 degrees clockwise.*/
-package lp2;
+// Write a program that rotates a given N x N matrix 90 degrees clockwise.
 import java.util.Scanner;
 public class exp4c {
     public static void rotate(int[][] matrix) {
@@ -19,6 +18,8 @@ public class exp4c {
     }
 
     public static void main(String[] args) {
+        System.out.println("Name: Vanshika");
+        System.out.println("Roll No: 2210997266");
         Scanner scanner = new Scanner(System.in);
         int[][] matrix = new int[3][3];
         System.out.println("Enter the elements of the 3x3 matrix:");
